@@ -1,11 +1,11 @@
 # YouTube Creator Hub
 
-Self-hosted Flask dashboard for owner-authorized YouTube channels, official Google OAuth, channel/video analytics, manual revenue records and a durable private-upload queue. Uses SQLite and an AES-GCM encrypted local credential vault.
+Connect your YouTube channels through Google OAuth to see channel and video analytics, log revenue manually, and queue private uploads. This self-hosted Flask app stores data in SQLite and protects local credentials with AES-GCM.
 
 ## Public source edition
 Runtime code, synthetic offline tests and required UI assets only. No account database, OAuth client credentials, tokens, owner password, channel snapshots, personal finance, bootstrap envelope, deployment configuration or original Git history is included.
 
-The dashboard and authorized read-side integration have historical functional acceptance. Complete real video upload/processing acceptance remains pending; production-ready unattended uploads are not claimed. Enqueueing remains private-only. Manual revenue records are not actual YouTube payouts.
+The dashboard and analytics were tested with authorized channels. End-to-end upload and processing have not been fully verified. The queue accepts private uploads only. Revenue entries are manual, not YouTube payout data.
 
 ## Requirements
 Python 3.11+, FFmpeg/ffprobe for queued media validation, your Google Cloud YouTube Data/Analytics APIs and Web OAuth client. Use a trusted HTTPS reverse proxy; secure session cookies are not disabled.
